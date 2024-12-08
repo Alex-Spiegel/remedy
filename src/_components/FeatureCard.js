@@ -9,7 +9,7 @@ function FeatureCard({
   onButtonClick,
 }) {
   return (
-    <div className="w-64 h-80 p-6 rounded-lg bg-lime-200">
+    <div className="w-64 min-w-56 h-80 p-6 rounded-lg bg-lime-200">
       <Image
         src={imageSrc}
         alt={imageAlt}

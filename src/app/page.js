@@ -3,68 +3,9 @@ import SearchSection from "@/_components/SearchSection";
 
 function Home() {
   return (
-    <div className="mx-20 bg-mygreen">
-      {/* Navbar */}
-      <nav className=" border-2 border-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center">
-            {/* Logo und App-Name */}
-            <div className="flex items-center">
-              <div>
-                <img
-                  src="https://res.cloudinary.com/duzrxqgy4/image/upload/v1733152992/Logo_fg52wf.png"
-                  alt="Logo"
-                  className="h-20"
-                />
-              </div>
-            </div>
-
-            {/* Navigation Links */}
-            <div className="flex space-x-6 text-gray-100 text-xl font-medium">
-              <a
-                href="#"
-                className="hover:text-green-500"
-              >
-                Über uns
-              </a>
-              <a
-                href="#"
-                className="hover:text-green-500"
-              >
-                Blog
-              </a>
-              <a
-                href="#"
-                className="hover:text-green-500"
-              >
-                Login
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      <section>
-        <div className="mx-auto w-[60%] bg-lime-200 rounded-lg">
-          <SearchSection />
-
-          {/* Search field */}
-          <div className="py-6 text-center border-2 border-black">
-            <input
-              type="text"
-              placeholder="Beschwerde eingeben (z. B. Bauchweh)"
-              className="w-3/4 max-w-md p-3 rounded-md text-gray-800"
-            />
-            <button className="bg-green-500 text-white px-6 py-3 rounded-md font-semibold ml-2">
-              Suchen
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* Feature Section */}
+    <div>
+      <SearchSection />
       <FeatureSection />
-
       {/* Blog Teaser Section */}
       <section className="py-12 border-2 border-black">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -163,31 +104,6 @@ function Home() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="text-white py-6 text-center border-black border-2">
-        <p className="text-sm">&#169; 2024 Herbal Compass</p>
-        <nav className="mt-4">
-          <a
-            href="#"
-            className="text-white underline mx-2"
-          >
-            Über uns
-          </a>
-          <a
-            href="#"
-            className="text-white underline mx-2"
-          >
-            Blog
-          </a>
-          <a
-            href="#"
-            className="text-white underline mx-2"
-          >
-            Datenschutz
-          </a>
-        </nav>
-      </footer>
     </div>
   );
 }
