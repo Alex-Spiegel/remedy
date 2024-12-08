@@ -28,7 +28,7 @@ function FeatureSection() {
 
   // Darunter: Nochmal einlesen in map()-Methode, index & key & react, spread-operator syntax
   return (
-    <section className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 py-12 border-2 border-black">
+    <section className="max-w-5xl mx-auto px-14 py-12  flex flex-wrap justify-around gap-6">
       {features.map((feature, index) => (
         <FeatureCard
           key={index}
